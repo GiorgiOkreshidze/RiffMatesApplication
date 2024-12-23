@@ -9,7 +9,7 @@
         <h1 class="text-primary mb-4">Advanced RiffMates News</h1>
         <table>
             {% for item in news %}
-            <tr>
+            <tr style="background-color: '{% cycle '#ddd' '#bbb' %}'">
                 <td> {{ item.0 | date:"Y-m-d" }} </td>
                 <td> {{ item.1 }} </td>
             </tr>
